@@ -88,6 +88,8 @@ body {
     list-style: none;
 }
 
+
+
 .logo-web {
     color: #2196F3;
 }
@@ -122,6 +124,9 @@ body {
     color: var(--accent-color);
 }
 
+.auth-nav-icon:hover, :focus {
+    color: var(--accent-color);
+}
 .container-header {
     display: flex;
     justify-content: space-between;
@@ -261,8 +266,50 @@ body {
 }
 
  /* Фото команды */
-  
- .title-photo {
+ 
+ .link {
+    text-decoration: none;
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon ,
+.social-list-link:focus .social-list-icon{
+
+    background-color: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+
+
+.title-photo {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -305,6 +352,8 @@ body {
   .information-about-team {
       padding-top: 30px;
       padding-bottom: 30px;
+      padding-left: 32px;
+      padding-right: 32px;
   }
 
   /* Футер */
