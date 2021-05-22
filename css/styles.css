@@ -136,6 +136,9 @@ body {
     margin-right: 50px;
 }
 
+/* .auth-nav-icon {
+    fill: #757575;
+} */
 
 /* Тема сайта */
 
@@ -188,7 +191,9 @@ body {
 .main-section {
   padding-bottom: 200px;
   padding-top: 200px;
-  background-color: var(--secondary-background-color);
+  background-image: url(../images/main-background-image.jpg);
+    
+  /* background-color: var(--secondary-background-color); */
 }
     
 
