@@ -141,9 +141,35 @@ body {
     margin-right: 50px;
 }
 
-/* .auth-nav-icon {
+.link-auth-nav {
+    display: flex;
+    align-items: center;
+}
+
+.auth-nav-icon-envelope {
+    height: 12px;
+    width: 16px;
     fill: #757575;
-} */
+    margin-right: 10px;
+}
+
+.auth-nav-icon-envelope:hover,
+.auth-nav-icon-envelope:focus {
+    fill: var(--accent-color);
+}
+
+.auth-nav-icon-smartphone {
+    height: 16px;
+    width: 10px;
+    fill: #757575;
+    margin-right: 10px;
+    
+}
+
+.auth-nav-icon-smartphone:hover,
+.auth-nav-icon-smartphone:focus {
+    fill: var(--accent-color);
+}
 
 /* Тема сайта */
 
@@ -196,9 +222,14 @@ body {
 .main-section {
   padding-bottom: 200px;
   padding-top: 200px;
-  background-image: url(../images/main-background-image.jpg);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ),
+     url(../images/main-background-image.jpg);
+  background-size: cover;
     
-  /* background-color: var(--secondary-background-color); */
+  
 }
     
 
@@ -215,6 +246,29 @@ body {
     color: var(--secondery-text-color);
 }
 
+.list-advantages-icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list-advantages-iten {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.list-advantages-iten-icon {
+    height: 70px;
+    width: 70px;
+    
+   
+}
+
 .advantages {
     display: flex;
     flex-wrap: nowrap;
@@ -223,6 +277,10 @@ body {
 
 .list-advantages:not(:last-child) {
     margin-right: 30px;
+}
+
+.list-advantages {
+    margin-top: 30px;
 }
 
 .about-advantages {
@@ -303,7 +361,6 @@ body {
 .social-list-link:hover .social-list-icon ,
 .social-list-link:focus .social-list-icon{
 
-    background-color: #FFFFFF;
     fill: #FFFFFF;
 }
 
@@ -356,6 +413,58 @@ body {
       padding-right: 32px;
   }
 
+  /* Постоянные клиенты */
+
+  .title-four-section {
+      font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+  }
+  
+  .list-client {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+
+  }
+
+  .list-client-iten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px
+  }
+
+
+  .list-client-iten:hover,
+  .list-client-iten:focus {
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+  }
+
+  .list-client-iten:hover .list-client-iten-icon,
+  .list-client-iten:focus .list-client-iten-icon {
+
+    fill: var(--accent-color);
+  }
+
+
+  .list-client-iten-icon {
+      height: 60px;
+      width: 106px;
+      fill: #AFB1B8;
+  }
+  
   /* Футер */
 
 .logo-footer {
@@ -382,6 +491,7 @@ body {
 }
 
 .footer-content {
+    display: flex;
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -389,8 +499,14 @@ body {
 
 .container-footer {
     display: flex;
+    justify-content: start;
+}
+
+.logo-address {
+    display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-right: 70px;
 }
 
 .list-contact {
@@ -399,6 +515,60 @@ body {
 
 .list-contact-item:not(:first-child) {
     margin-top: 9px;
+}
+
+.title-social-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin-top: 20px;
+    
+
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+}
+
+.footer-social-list-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.footer-social-link {
+    margin-top: 12px;
+    
+}
+
+.footer-social-list-link,
+.footer-social-list-link {
+   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-icon {
+    fill: #FFFFFF;
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: var(--accent-color);
 }
 
 /*  Список фильтр кнопок в партфолио */
