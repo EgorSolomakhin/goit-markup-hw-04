@@ -106,8 +106,8 @@ body {
   
 }
 
-.site-nav .link-site-nav:hover, 
-.site-nav .link-site-nav:focus {
+.link-site-nav:hover, 
+.link-site-nav:focus {
     color: var(--accent-color);
 }
 .link-auth-nav {
@@ -424,7 +424,7 @@ body {
 
   /* Постоянные клиенты */
 
-  .title-four-section {
+.title-four-section {
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
@@ -434,17 +434,17 @@ body {
     letter-spacing: 0.03em;
 
     color: #212121;
-  }
+}
   
   
-  .list-client {
+.list-client {
       display: flex;
       justify-content: space-between;
       margin-top: 50px;
 
-  }
+}
 
-  .list-client-iten-link {
+.list-client-iten-link {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -454,10 +454,9 @@ body {
       box-sizing: border-box;
       border-radius: 4px;
       border: 1px solid #AFB1B8
-  }
+}
 
 .list-client-iten-icon {
-    
     width: 106;
     fill: #AFB1B8;
 }
@@ -465,8 +464,7 @@ body {
 .list-client-iten-link:hover,
 .list-client-iten-link:focus {
     cursor: pointer;
-    border: 1px solid #2196F3;
-    
+    border: 1px solid #2196F3;  
 }
 
 .list-client-iten-link:hover .list-client-iten-icon,
