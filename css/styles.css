@@ -106,7 +106,8 @@ body {
   
 }
 
-.site-nav .link-site-nav:hover, :focus {
+.site-nav .link-site-nav:hover, 
+.site-nav .link-site-nav:focus {
     color: var(--accent-color);
 }
 .link-auth-nav {
@@ -435,6 +436,7 @@ body {
     color: #212121;
   }
   
+  
   .list-client {
       display: flex;
       justify-content: space-between;
@@ -442,41 +444,36 @@ body {
 
   }
 
-  .list-client-iten {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 92px;
-    width: 170px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px
+  .list-client-iten-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 92px;
+      width: 170px;
+      background-color: #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #AFB1B8
   }
 
-  .list-client-iten-link:focus {
-      color: var(--accent-color);
-  }
-  
-  .list-client-iten:hover,
-  .list-client-iten:focus {
+.list-client-iten-icon {
+    
+    width: 106;
+    fill: #AFB1B8;
+}
+
+.list-client-iten-link:hover,
+.list-client-iten-link:focus {
     cursor: pointer;
-    border: 1px solid var(--accent-color);
-  }
+    border: 1px solid #2196F3;
+    
+}
 
-  .list-client-iten:hover .list-client-iten-icon,
-  .list-client-iten:focus .list-client-iten-icon {
-
+.list-client-iten-link:hover .list-client-iten-icon,
+.list-client-iten-link:focus .list-client-iten-icon {
     fill: var(--accent-color);
-  }
-
-
-  .list-client-iten-icon {
-      height: 60px;
-      width: 106px;
-      fill: #AFB1B8;
-  }
-
-  
+}
+ 
   
   /* Футер */
 
